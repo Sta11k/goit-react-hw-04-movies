@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 
 const Navigation = () => {
   return (
-    // <ThemeProvider theme={theme}>
+  
     <div className="Header">
       <ul className="NavList">
         <li>
@@ -17,7 +17,7 @@ const Navigation = () => {
             <Button
               style={{
                 borderRadius: 35,
-                backgroundColor: "#21b6ae",
+               backgroundColor: " rgb(182, 56, 56)",
                 padding: "1px 36px",
                 fontSize: "18px"
               }}
@@ -36,7 +36,7 @@ const Navigation = () => {
             <Button
             style={{
                 borderRadius: 35,
-                backgroundColor: "#21b6ae",
+                backgroundColor: " rgb(182, 56, 56)",
                 padding: "1px 36px",
                 fontSize: "18px"
               }}

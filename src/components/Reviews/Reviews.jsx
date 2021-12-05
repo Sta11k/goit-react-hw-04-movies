@@ -36,7 +36,7 @@ export default class Reviews extends Component {
                   </a>
                 </li>
               ))
-            : "We don't have any reviews for this movie"}
+            : "We don't have  movie"}
         </ul>
       </div>
     );

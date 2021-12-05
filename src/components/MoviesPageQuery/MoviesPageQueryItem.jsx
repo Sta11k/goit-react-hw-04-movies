@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-import defaultImage from '../../img/default.png';
 
 const MoviesPageQueryItem = ({ poster, baseUrl, title }) => {
   return (
     <div>
       <div>
-        <img src={poster ? `${baseUrl}${poster}` : defaultImage} alt={title} />
+        <img src={poster ? `${baseUrl}${poster}` : poster} alt={title} />
       </div>
 
       <h3 className="MoviesPageQuery-title">{title}</h3>
@@ -14,7 +13,7 @@ const MoviesPageQueryItem = ({ poster, baseUrl, title }) => {
 };
 
 MoviesPageQueryItem.defaultProps = {
-  poster: defaultImage,
+
   title: 'Nothing Found',
 };
 

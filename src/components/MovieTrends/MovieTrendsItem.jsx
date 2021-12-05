@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
-import defaultImage from '../../img/default.png';
+
 
 const MovieTrendsItem = ({ title, poster, baseUrl }) => {
   return (
     <>
       <h3 className="HomeList-title">{title}</h3>
-      <img src={poster ? `${baseUrl}${poster}` : defaultImage} alt={title} />
+      <img src={poster ? `${baseUrl}${poster}` : poster} alt={title} />
     </>
   );
 };
 
 MovieTrendsItem.defaultProps = {
   title: 'Nothing Found',
-  poster: defaultImage,
+
 };
 
 MovieTrendsItem.propTypes = {

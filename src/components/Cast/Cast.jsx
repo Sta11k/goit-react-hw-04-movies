@@ -2,7 +2,7 @@ import { Component } from 'react';
 import API from '../../services/moviesApi';
 import PropTypes from 'prop-types';
 import './Cast.scss';
-import defaultImage from '../../img/default.png';
+
 
 export default class Cast extends Component {
   state = {
@@ -30,7 +30,7 @@ export default class Cast extends Component {
               <li className="CastList-item" key={id}>
                 <img
                   src={
-                    profile_path ? `${base_url}${profile_path}` : defaultImage
+                    profile_path ? `${base_url}${profile_path}` : profile_path
                   }
                   alt={name}
                 />
@@ -48,7 +48,7 @@ export default class Cast extends Component {
 }
 
 Cast.defaultProps = {
-  profile_path: defaultImage,
+
   name: 'Unknown',
   character: 'Unknown',
 };

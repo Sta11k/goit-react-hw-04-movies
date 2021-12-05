@@ -1,6 +1,6 @@
 import s from './MovieDetails.module.scss';
 import PropTypes from 'prop-types';
-import defaultImage from '../../img/default.png';
+
 
 const MovieDetails = ({
   title,
@@ -28,7 +28,7 @@ const MovieDetails = ({
       <h1 className={s.title}>{title}</h1>
 
       <div className={s.content}>
-        <img src={url ? `${baseUrl}${url}` : defaultImage} alt={title} />
+        <img src={url ? `${baseUrl}${url}` : url} alt={title} />
 
         <div className={s.textContainer}>
           <h2 className={s.tagline}>{tag}</h2>
@@ -68,7 +68,7 @@ MovieDetails.defaultProps = {
   votea: 0,
   data: 0,
   votec: 0,
-  url: defaultImage,
+ 
   tag: null,
   title: 'Nothing found',
   desc: '',

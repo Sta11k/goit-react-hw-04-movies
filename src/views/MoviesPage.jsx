@@ -10,7 +10,7 @@ class MoviesPage extends Component {
     query: '',
     movies: [],
     page: 1,
-    base_url: 'https://image.tmdb.org/t/p/w500',
+   
   };
 
   componentDidMount = () => {
