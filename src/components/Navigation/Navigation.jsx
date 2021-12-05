@@ -1,16 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
 import { Button } from '@material-ui/core';
-// import { ThemeProvider, createTheme } from '@material-ui/core/styles';
-
-// const theme = createTheme({
-//   palette: {
-//     neutral: {
-//       main: '#ff0000', // цвет кнопки менять тут
-//       contrastText: '#000000' //цвет текста тут
-//     }
-// }
-// });
 
 const Navigation = () => {
   return (
