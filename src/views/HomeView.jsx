@@ -59,7 +59,7 @@ export default class HomeView extends Component {
             variant='contained'
             onClick={() => this.fetchMovies(page + 1)}
           >
-            More movies
+            Next movies
           </Button>
         )}
       </div>
